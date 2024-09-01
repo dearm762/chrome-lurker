@@ -1,0 +1,1 @@
+curl -X POST http://localhost:3000/chrome -H "Content-Type: application/json" -d "{\"address\": \"TERMINAL REQUEST\"}"
