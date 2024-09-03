@@ -1,0 +1,9 @@
+# queue_
+
+- ENV FILE \
+- + DB_USERNAME=DB_USERNAME
+- + DB_PASSWORD=DB_PASSWORD
+- + DB_HOST=DB_HOST
+- + DB_NAME=DB_NAME
+- + DB_PORT=DB_PORT
+# backend-queue

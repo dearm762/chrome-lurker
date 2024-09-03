@@ -1,0 +1,33 @@
+version: '3.7'
+
+networks:
+  dev:
+    driver: bridge
+
+services:
+  nginx:
+    image: nginx:stable-alpine
+    ports:
+      - '80:80'
+      - '443:443'
+    volumes:
+      - './nginx/nginx.conf:/etc/nginx/nginx.conf'
+      - './nginx/narxoz2024.cer:/etc/nginx/ssl/narxoz2024.cer'
+      - './nginx/starnew.key:/etc/nginx/ssl/starnew.key'
+    depends_on:
+      - backend
+      - frontend
+    networks:
+      - dev
+
+  backend:
+    build:
+      context: ./backend
+    networks:
+      - dev
+
+  frontend:
+    build:
+      context: ./frontend
+    networks:
+      - dev
