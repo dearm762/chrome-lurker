@@ -1,0 +1,473 @@
+{
+	"kz": {
+		"languages": {
+			"en": "Ағылгшын",
+			"ru": "Орыс",
+			"kz": "Қазақ",
+			"English": "Ағылгшын",
+			"Русский": "Орыс",
+			"Қазақ": "Қазақ",
+			"text": "Тілді таңдаңыз"
+		},
+		"main": {
+			"Main": "Жеке мәлімет",
+			"Description": "Жеке мәліметіңізді енгізіңіз",
+			"Input": "Аты-жөні",
+			"Button": "Жалғастыру"
+		},
+		"categories": {
+			"Main": "Кезекке тұру",
+			"Description": "Қызметті таңдаңыз, номерді алып, шақыруды күтіңіз.",
+			"queueText": "Кезекте тұрған адамдар"
+		},
+		"ticket": {
+			"Title": "Терезені жаппаңыз!",
+			"Description": "Сіздің кезегіңіз осында көрсетіледі",
+			"TicketNumberText": "Сіздің нөміріңіз",
+			"FrontQueue": "Алдыңызда кезекте",
+			"CurrentTicket": "Қазір шақырылған талон",
+			"TicketNumber": "ТАЛОН",
+			"Window": "ТЕРЕЗЕ",
+			"CancelTicket": "Кезектен бас тарту",
+			"Copyright": "Нархоз Университеті"
+		},
+		"staffDashboard": {
+			"MainText": "Қызмет",
+			"PersonalData": "Жеке деректер",
+			"GeneralData": "Жалпы деректер",
+			"WindowNumber": "Терезе нөмірі",
+			"AcceptedToday": "Бүгін қабылданды",
+			"SkippedToday": "Бүгін өткізіп жіберілді",
+			"ServedToday": "Бүгін қызмет көрсетілді",
+			"QueueClients": "Кезекте тұрған клиенттер",
+			"SkipMaintenanceButton": "Өткізіп жіберу",
+			"EndMaintenanceButton": "Қызметті аяқтау",
+			"StartMaintenanceButton": "Қызметті бастау",
+			"TicketClient": "Талонмен клиент",
+			"TicketMaintenance": "Қызмет көрсету",
+			"TicketCreateAt": "Алу уақыты",
+			"TicketLanguage": "Тіл",
+			"TicketPhoneNumber": "Телефон нөмір",
+			"TicketFullName": "Аты жөні",
+			"alert-not-found": "Барлық талондар жабылды"
+		},
+		"adminDashboard": {
+			"MainText": "Админ",
+			"GeneralData": "Жалпы деректер",
+			"AcceptedToday": "Бүгін қабылданды",
+			"ServedToday": "Бүгін қызмет көрсетілді",
+			"QueueClients": "Кезекте тұрған клиенттер",
+			"RemoteMaintenance": "Қызмет көрсетуді басқару",
+			"AddCategoryButton": "Бөлім қосу",
+			"AddUserButton": "Оператор қосу",
+			"Stat": "Статистика",
+			"ModalNameCategory": "Бөлім атауын енгізіңіз",
+			"AddButton": "Қосу",
+			"CancelButton": "Бас тарту",
+			"invalied users": "Жарамсыз операторлар",
+			"users-not-found": "Операторлар табылмады",
+			"new-category-input":"Мұнда жаңа санаттың атауын енгізіңіз..."
+		},
+		"AddUser": {
+			"MainText": "Пайдаланушыны қосу",
+			"FirstName": "Аты",
+			"LastName": "Тегі",
+			"Email": "Электрондық пошта",
+			"WindowNumber": "Терезе нөмірі",
+			"SelectCategory": "Санатты таңдаңыз",
+			"AddButton": "Қосу",
+			"BackToButton": "Артқа",
+			"WarningText": "Құпия сөз автоматты түрде жасалып, пайдаланушының электрондық поштасына жіберіледі",
+			"SpamText": "Назар аударыңыз, хат \"Спам\" бөлімінде болуы мүмкін."
+		},
+		"EditUser": {
+			"MainText": "Деректерді өзгерту",
+			"FirstName": "Аты",
+			"LastName": "Тегі",
+			"Email": "Электрондық пошта",
+			"WindowNumber": "Терезе нөмірі",
+			"SelectCategory": "Санатты таңдаңыз",
+			"EditButton": "Өзгерту",
+			"BackToButton": "Артқа",
+			"Invalid": "Жарамсыз"
+		},
+		"SignIn": {
+			"MainText": "Жеке кабинетке кіру",
+			"Email": "Электрондық пошта",
+			"Password": "Құпия сөзді енгізіңіз",
+			"ForgetPasswordButton": "Құпия сөзді ұмыттым",
+			"SignInButton": "Кіру"
+		},
+		"ForgotPassword": {
+			"MainText": "Құпия сөзді ұмыттым",
+			"Description": "Жеке аккаунтыңызға тіркелген электрондық пошта мекенжайын енгізіңіз. Біз сізге көрсетілген мекенжайға құпия сөзді қалпына келтіру бойынша нұсқауларды жібереміз.",
+			"Email": "Электрондық пошта",
+			"BackToButton": "Артқа",
+			"ResetButton": "Қалпына келтіру"
+		},
+		"ResetPassword": {
+			"MainText": "Құпия сөзді қалпына келтіру",
+			"Description": "Жаңа құпия сөзді енгізіп, оны растаңыз. Құпия сөздің сенімді екеніне және оның кемінде 8 таңбадан, соның ішінде әріптер мен сандардан тұратынына көз жеткізіңіз.",
+			"Password": "Құпия сөзді енгізіңіз",
+			"ConfirmPassword": "Құпия сөзді растаңыз",
+			"ResetButton": "Қалпына келтіру"
+		},
+		"user": {
+			"MainText": "Пайдаланушы туралы ақпарат",
+			"FirstName": "Есімі",
+			"LastName": "Тегі",
+			"Email": "Электронды пошта",
+			"WindowNumber": "Терезе нөмірі",
+			"Category": "Санаты",
+			"ButtonEdit": "Деректерді өзгерту",
+			"ButtonDelete": "Жою",
+			"Tickets": "Талондар",
+			"skipped": "Өзкізіп жіберілді",
+			"completed": "Қызмет көрсетілді",
+			"invited": "Шақырылған",
+			"Table": {
+				"TicketFullName": "Аты",
+				"TicketPhoneNumber": "Телефон нөмірі",
+				"TicketNumber": "Талон нөмірі",
+				"TicketStatus": "Статус",
+				"TicketLanguage": "Тіл",
+				"TicketCreateAt": "Алу уақыты"
+			},
+			"statistic": {
+				"accepted": "Қабылданды",
+				"skipped": "Өзкізіп жіберілді",
+				"served": "Қызмет көрсетілді",
+				"date": "Соңғы ай",
+				"alert": "Жоюды растағыңыз келе ме?"
+			}
+		},
+		"statistic": {
+			"general_text": "Жалпы статистика",
+			"categoey_text": "Бөлімдер бойынша статистика",
+			"accepted_today": "бүгін қабылданған клиенттер",
+			"cancelled_today": "бүгін қызмет көрсетілген клиенттер",
+			"passed_today": "бүгін жойылған билеттер",
+			"serviced_today": "бүгін жіберілген клиенттер",
+			"serviced_all_time": "Жалпы қабылданған клиенттер",
+			"accepted_all_time": "Жалпы қызмет көрсетілген клиенттер"
+		},
+		"invalid-page": {
+			"first-line": "Сіздің аккаунтыңыз қазір белсенді емес.",
+			"second-line": "Компания модераторына хабарласыңыз."
+		}
+	},
+	"en": {
+		"languages": {
+			"en": "English",
+			"ru": "Russian",
+			"kz": "Kazakh",
+			"text": "Select language",
+			"English": "English",
+			"Русский": "Russian",
+			"Қазақ": "Kazakh"
+		},
+		"main": {
+			"Main": "Personal data",
+			"Description": "Specify your full name and phone number",
+			"Input": "Full name",
+			"Button": "Send"
+		},
+		"categories": {
+			"Main": "Queuing",
+			"Description": "Select the service, pick up the number and wait for the invitation.",
+			"queueText": "People in line"
+		},
+		"ticket": {
+			"Title": "Do not close the window!",
+			"Description": "Your queue will be displayed here",
+			"TicketNumberText": "Your number",
+			"FrontQueue": "In front of you in line",
+			"CurrentTicket": "Now invited coupon",
+			"TicketNumber": "TICKET",
+			"Window": "WINDOW",
+			"CancelTicket": "Cancel the queue",
+			"Copyright": "Narxoz University"
+		},
+		"staffDashboard": {
+			"MainText": "Service",
+			"PersonalData": "Personal Data",
+			"GeneralData": "General Data",
+			"WindowNumber": "Window Number",
+			"AcceptedToday": "Accepted Today",
+			"SkippedToday": "Skipped Today",
+			"ServedToday": "Served Today",
+			"QueueClients": "Clients in Queue",
+			"SkipMaintenanceButton": "Skip Service",
+			"StartMaintenanceButton": "Start Service",
+			"EndMaintenanceButton": "End Service",
+			"TicketClient": "Client with Ticket",
+			"TicketMaintenance": "Service",
+			"TicketCreateAt": "Time Received",
+			"TicketLanguage": "Language",
+			"TicketPhoneNumber": "Phone number",
+			"TicketFullName": "Full Name",
+			"alert-not-found": "All coupons are closed"
+		},
+		"adminDashboard": {
+			"MainText": "Admin",
+			"GeneralData": "General Data",
+			"AcceptedToday": "Accepted Today",
+			"ServedToday": "Served Today",
+			"QueueClients": "Clients in Queue",
+			"RemoteMaintenance": "Remote Service Management",
+			"AddCategoryButton": "Create a new category",
+			"AddUserButton": "Add operator",
+			"Stat": "Statistics",
+			"ModalNameCategory": "Enter the names of the categories",
+			"AddButton": "Add",
+			"CancelButton": "Cancel",
+			"invalied users": "Invalied operators",
+			"users-not-found": "Operators not found",
+			"new-category-input":"Enter name of the new category here..."
+		},
+		"AddUser": {
+			"MainText": "Add User",
+			"FirstName": "First Name",
+			"LastName": "Last Name",
+			"Email": "Email",
+			"WindowNumber": "Window Number",
+			"SelectCategory": "Select Category",
+			"AddButton": "Add",
+			"BackToButton": "Back",
+			"WarningText": "The password will be automatically generated and sent to the user's email",
+			"SpamText": "Please note that the email might end up in the \"Spam\" folder."
+		},
+		"EditUser": {
+			"MainText": "Edit Information",
+			"FirstName": "First Name",
+			"LastName": "Last Name",
+			"Email": "Email",
+			"WindowNumber": "Window Number",
+			"SelectCategory": "Select Category",
+			"EditButton": "Edit",
+			"BackToButton": "Back",
+			"Invalid": "Invalid"
+		},
+		"SignIn": {
+			"MainText": "Sign In to Your Account",
+			"Email": "Email",
+			"Password": "Enter Password",
+			"ForgetPasswordButton": "Forgot Password",
+			"SignInButton": "Sign In"
+		},
+		"ForgotPassword": {
+			"MainText": "Forgot Password",
+			"Description": "Please enter the email address registered with your account. We will send you instructions to reset your password to the specified address.",
+			"Email": "Email",
+			"BackToButton": "Back",
+			"ResetButton": "Reset"
+		},
+		"ResetPassword": {
+			"MainText": "Reset Password",
+			"Description": "Please enter a new password and confirm it. Ensure that the password is strong and contains at least 8 characters, including letters and numbers.",
+			"Password": "Enter Password",
+			"ConfirmPassword": "Confirm Password",
+			"ResetButton": "Reset"
+		},
+		"user": {
+			"MainText": "User Information",
+			"FirstName": "First Name",
+			"LastName": "Last Name",
+			"Email": "Email",
+			"WindowNumber": "Window Number",
+			"Category": "Category",
+			"ButtonEdit": "Edit data",
+			"ButtonDelete": "Delete",
+			"Tickets": "Tickets",
+			"skipped": "Skipped",
+			"completed": "Completed",
+			"invited": "Invited",
+			"Table": {
+				"TicketFullName": "Name",
+				"TicketPhoneNumber": "Phone Number",
+				"TicketNumber": "Ticket Number",
+				"TicketStatus": "Status",
+				"TicketLanguage": "Language",
+				"TicketCreateAt": "Received At"
+			},
+			"statistic": {
+				"accepted": "Accepted",
+				"skipped": "Skipped",
+				"served": "Served",
+				"date": "Last month",
+				"alert": "Are you sure you want to delete?"
+			}
+		},
+		"statistic": {
+			"general_text": "Overall statistics",
+			"categoey_text": "Statistics by departments",
+			"accepted_today": "clients accepted today",
+			"cancelled_today": "clients serviced today",
+			"passed_today": "tickets cancelled today",
+			"serviced_today": "clients skipped today",
+			"serviced_all_time": "clients accepted all time",
+			"accepted_all_time": "clients serviced all time"
+		},
+		"invalid-page": {
+			"first-line": "Your account is currently inactive.",
+			"second-line": "Please contact the company moderator."
+		}
+	},
+	"ru": {
+		"languages": {
+			"en": "Англиский",
+			"ru": "Русский",
+			"kz": "Казахский",
+			"text": "Выберите язык",
+			"English": "Англиский",
+			"Русский": "Русский",
+			"Қазақ": "Казахский"
+		},
+		"main": {
+			"Main": "Личные данные",
+			"Description": "Укажите ваш номер телефона и имя",
+			"Input": "ФИО",
+			"Button": "Продолжить"
+		},
+		"categories": {
+			"Main": "Стоять в очереди",
+			"Description": "Выберите услугу, получите номер талона и ждите приглашения.",
+			"queueText": "Людей в очереди"
+		},
+		"ticket": {
+			"Title": "Не закрывайте окно!",
+			"Description": "Ваша очередь будет показана здесь",
+			"TicketNumberText": "Ваш номер",
+			"FrontQueue": "В очереди перед вами",
+			"CurrentTicket": "Сейчас вызывается",
+			"TicketNumber": "ТАЛОН",
+			"Window": "ОКНО",
+			"CancelTicket": "Отказ от очереди",
+			"Copyright": "Университет Нархоз"
+		},
+		"staffDashboard": {
+			"MainText": "Обслуживание",
+			"PersonalData": "Личные данные",
+			"GeneralData": "Общие данные",
+			"WindowNumber": "Номер окна",
+			"AcceptedToday": "Принято за сегодня",
+			"SkippedToday": "Пропущено за сегодня",
+			"ServedToday": "Обслужено за сегодня",
+			"QueueClients": "Клиентов в очереди",
+			"SkipMaintenanceButton": "Пропустить обслуживание",
+			"StartMaintenanceButton": "Начать обслуживание",
+			"EndMaintenanceButton": "Завершить обслуживание",
+			"TicketClient": "Клиент с талоном",
+			"TicketMaintenance": "Обслуживание",
+			"TicketCreateAt": "Время получения",
+			"TicketLanguage": "Язык",
+			"TicketPhoneNumber": "Телефон номер",
+			"TicketFullName": "Имя",
+			"alert-not-found":"Все талоны закрыты"
+		},
+		"adminDashboard": {
+			"MainText": "Админ",
+			"GeneralData": "Общие данные",
+			"AcceptedToday": "Принято за сегодня",
+			"QueueClients": "Клиентов в очереди",
+			"ServedToday": "Обслужено за сегодня",
+			"RemoteMaintenance": "Управления обслужиsванием",
+			"AddCategoryButton": "Добавить категорию",
+			"AddUserButton": "Добавить оператора",
+			"Stat": "Статистика",
+			"ModalNameCategory": "Введите названия категорий",
+			"AddButton": "Добавить",
+			"CancelButton": "Отменить",
+			"invalied users": "Недействительные операторы",
+			"users-not-found": "Не найдено операторы",
+			"new-category-input":"Введите здесь название новой категории..."
+		},
+		"AddUser": {
+			"MainText": "Добавить пользователя",
+			"FirstName": "Имя",
+			"LastName": "Фамилия",
+			"Email": "Электронная почта",
+			"WindowNumber": "Номер окна",
+			"SelectCategory": "Выберите категорию",
+			"AddButton": "Добавить",
+			"BackToButton": "Назад",
+			"WarningText": "Пароль будет автоматически сгенерировано и отправлен на почту пользователя",
+			"SpamText": "Обратите внимание, что письмо может оказаться в разделе \"Спам\"."
+		},
+		"EditUser": {
+			"MainText": "Изменить данные",
+			"FirstName": "Имя",
+			"LastName": "Фамилия",
+			"Email": "Электронная почта",
+			"WindowNumber": "Номер окна",
+			"SelectCategory": "Выберите категорию",
+			"EditButton": "Изменить",
+			"BackToButton": "Назад",
+			"Invalid": "Недействительно"
+		},
+		"SignIn": {
+			"MainText": "Войти в личный кабинет",
+			"Email": "Электронная почта",
+			"Password": "Введите пароль",
+			"ForgetPasswordButton": "Забыль пароль",
+			"SignInButton": "Войти"
+		},
+		"ForgotPassword": {
+			"MainText": "Забыли пароль",
+			"Description": "Пожалуйста, введите адрес электронной почты, зарегистрированный в вашей учетной записи. Мы направим вам инструкцию для сброса пароля на указанный адрес.",
+			"Email": "Электронная почта",
+			"BackToButton": "Назад",
+			"ResetButton": "Сбросить"
+		},
+		"ResetPassword": {
+			"MainText": "Забыли пароль",
+			"Description": "Пожалуйста, введите новый пароль и подтвердите его. Убедитесь, что пароль надежен и содержит не менее 8 символов, включая буквы и цифры.",
+			"Password": "Введите пароль",
+			"ConfirmPassword": "Повторите пароль",
+			"ResetButton": "Сбросить"
+		},
+		"user": {
+			"MainText": "Пользовательская информация",
+			"FirstName": "Имя",
+			"LastName": "Фамилия",
+			"Email": "Электронная почта",
+			"WindowNumber": "Номер окна",
+			"Category": "Категория",
+			"ButtonEdit": "Изменить данные",
+			"ButtonDelete": "Удалить оператора",
+			"Tickets": "Талоны",
+			"skipped": "Пропущено",
+			"completed": "Закончено",
+			"invited": "Приглашен",
+			"Table": {
+				"TicketFullName": "Имя",
+				"TicketPhoneNumber": "Телефон номер",
+				"TicketNumber": "Номер талона",
+				"TicketStatus": "Статус",
+				"TicketLanguage": "Язык",
+				"TicketCreateAt": "Время получения"
+			},
+			"statistic": {
+				"accepted": "Принято",
+				"skipped": "Пропущено",
+				"served": "Обслужено",
+				"date": "Прошлый месяц",
+				"alert": "Вы уверены, что хотите удалить?"
+			}
+		},
+		"statistic": {
+			"general_text": "Общий статистика",
+			"categoey_text": "Статистики по отдельности",
+			"accepted_today": "клиентов принято сегодня",
+			"cancelled_today": "клиентов обслужено сегодня",
+			"passed_today": "отмененны тикеты сегодня",
+			"serviced_today": "клиентов пропущено сегодня",
+			"serviced_all_time": "клиентов принято за все время",
+			"accepted_all_time": "клиентов обслужено за все время"
+		},
+		"invalid-page": {
+			"first-line": "Ваш аккаунт на данный момент недействителен.",
+			"second-line": "Обратитесь к модератору компании."
+		}
+	}
+}
