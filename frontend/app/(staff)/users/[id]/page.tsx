@@ -63,11 +63,12 @@ export default function UserPage() {
 	const [loading, setLoading] = useState<boolean>(true)
 	const [loading2, setLoading2] = useState<boolean>(false)
 	const [lang, setLanguage] = useState<Language>('ru')
-	const [information, setInformation] = useState<StatisticData | undefined>(
-		undefined
-	)
+	const [period, setPeriod] = useState<'1_day' | '1_week' | '1_month'>('1_day')
+	const [clients, setClients] = useState<Ticket[]>([])
+	const [information, setInformation] = useState<StatisticData | undefined>(undefined)
 	const router = useRouter()
 
+	// Fetch user and general information
 	const fetchData = useCallback(async () => {
 		try {
 			const [userResponse, infoResponse] = await Promise.all([
@@ -115,40 +116,56 @@ export default function UserPage() {
 		}
 	}, [id, router])
 
+	const fetchTicketsByPeriod = useCallback(async (selectedPeriod: string) => {
+		try {
+			const response = await fetch(
+				`https://e-queue.narxoz.kz/api/interface/admin/statistics/26/${selectedPeriod}/`
+			)
+			if (response.ok) {
+				const ticketData: Ticket[] = await response.json()
+				setClients(ticketData)
+			}
+		} catch (error) {
+			console.error('Error fetching tickets:', error)
+		}
+	}, [])
+
 	const getLang = useCallback(async () => {
 		const language = await getLanguage()
 		setLanguage(language)
 	}, [])
 
-	const deleteUser = async () => {
-		if (window.confirm(locales[lang].user.statistic.alert)) {
-			try {
-				setLoading(true)
-				const token = await getCookie('token')
-				const response = await fetch(urlCreator(`auth/${id}`), {
-					method: 'DELETE',
-					headers: {
-						'Content-Type': 'application/json',
-					},
-					body: JSON.stringify({
-						admin_token: token,
-					}),
-				})
-				if (response.ok) {
-					router.replace('/dashboard')
-				}
-			} catch (error) {
-				console.error('Error deleting user:', error)
-			} finally {
-				setLoading(false)
-			}
-		}
-	}
-
 	useEffect(() => {
 		getLang()
 		fetchData()
 	}, [fetchData, getLang])
+
+	useEffect(() => {
+		fetchTicketsByPeriod(period)
+	}, [period, fetchTicketsByPeriod])
+
+	const deleteUser = async () => {
+		try {
+			setLoading(true)
+			const token = await getCookie('token')
+			const response = await fetch(urlCreator(`auth/${id}`), {
+				method: 'DELETE',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify({
+					admin_token: token,
+				}),
+			})
+			if (response.ok) {
+				router.replace('/dashboard')
+			}
+		} catch (error) {
+			console.error('Error deleting user:', error)
+		} finally {
+			setLoading(false)
+		}
+	}
 
 	const memoizedData = useMemo(() => data, [data])
 
@@ -160,11 +177,9 @@ export default function UserPage() {
 		<>
 			<title>Нархоз Университеті | Пользователь</title>
 			<DashboardHeader setIsLoading={setLoading2} />
-			{
-				loading2 && <Loading />
-			}
+			{loading2 && <Loading />}
 			<div className='bg-[#F2F2F2] min-h-screen'>
-				<div className='w-full max-w-[1280px] mx-auto pt-32'>
+				<div className='w-full max-w-[1280px] mx-auto pt-32 pb-10'>
 					<Heading text={locales[lang].user.MainText} additionalStyle='mt-3' />
 					<div className='flex flex-row justify-between items-center w-full'>
 						<UserInformation
@@ -182,16 +197,10 @@ export default function UserPage() {
 									<span>{locales[lang].user.ButtonEdit}</span>
 								</Link>
 								<button
-									className='bg-black text-white font-bold text-2xl rounded-md py-5 px-5 grow hover:bg-[#111827] duration-700 flex justify-center gap-1 max-w-96 shadow'
+									className='bg-red-500 text-white font-bold text-2xl rounded-md py-5 px-5 grow hover:bg-red-600 duration-700 flex justify-center gap-1 max-w-96 shadow'
 									onClick={deleteUser}
 								>
 									<span>{locales[lang].user.ButtonDelete}</span>
-								</button>
-								<button
-									className='bg-black text-white font-bold text-2xl rounded-md py-5 px-5 grow hover:bg-[#111827] duration-700 flex justify-center gap-1 max-w-96 shadow'
-									onClick={deleteUser}
-								>
-									<span>Tickets</span>
 								</button>
 							</div>
 							<StatisticMiniCard
@@ -205,7 +214,7 @@ export default function UserPage() {
 						</div>
 					</div>
 					<Heading text={locales[lang].user.Tickets} additionalStyle='mt-10' />
-					<TicketTable lang={lang} data={information?.tickets as Ticket[]} />
+					<TicketTable lang={lang} data={clients} period={period} setPeriod={setPeriod} />
 				</div>
 			</div>
 		</>
